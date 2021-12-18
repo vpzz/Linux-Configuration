@@ -1,1 +1,1 @@
-# Enjoy vim, best editor!
+# Enjoy Linux!
