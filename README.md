@@ -20,3 +20,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 #然后进入Vim，执行  :PlugInstall
 ```
+6. 配置gnome termimal。在文本选项卡中选择16pt的字体，颜色选项卡中选择以亮色显示粗体字。
