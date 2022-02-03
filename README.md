@@ -1,7 +1,7 @@
 # Enjoy Linux!
 
 ## 注意事项
-1. 安装完Ubuntu后，先更新所有软件源,可以用tuna的。修改/etc/apt/sources.list文件。不过有时会因为没有更新ca-certificates这个包，会导致无法使用tuna提供的https链接，可以先将sources.list中的https替换为http。
+1. 安装完Ubuntu后，先更新所有软件源,可以用tuna的。修改/etc/apt/sources.list文件。不过有时会因为没有更新ca-certificates这个包，会导致无法使用tuna提供的https链接，可以先将sources.list中的https替换为http。也可以使用阿里云的镜像：https://developer.aliyun.com/mirror/ubuntu
 2. 执行下列命令：
 ``` shell
 sudo apt-get update      #更新软件源缓存
