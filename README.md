@@ -27,7 +27,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cd ~
 wget https://github.com/v2fly/v2ray-core/releases/download/v4.44.0/v2ray-linux-64.zip            #安装v2ray核心
 wget https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-linux-x64.AppImage  #安装Qv2ray，这是用QT编写的v2ray的GUI管理工具
-sudo mv Qv2ray-v2.7.0-linux-x64.AppImage /usr/bin/Qv2ray  #安装Qv2ray，该程序就一个可执行文件。
+sudo chmod a+x Qv2ray-v2.7.0-linux-x64.AppImage    #添加执行权限
+sudo mv Qv2ray-v2.7.0-linux-x64.AppImage /usr/bin  #安装Qv2ray，该程序就一个可执行文件。
 sudo mkdir /opt/v2ray     #创建v2ray核心的安装目录
 sudo unzip v2ray-linux-64.zip -d /opt/v2ray   #解压缩
 #启动qv2ray
