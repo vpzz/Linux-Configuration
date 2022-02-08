@@ -31,5 +31,6 @@ sudo chmod a+x Qv2ray-v2.7.0-linux-x64.AppImage    #添加执行权限
 sudo mv Qv2ray-v2.7.0-linux-x64.AppImage /usr/bin  #安装Qv2ray，该程序就一个可执行文件。
 sudo mkdir /opt/v2ray     #创建v2ray核心的安装目录
 sudo unzip v2ray-linux-64.zip -d /opt/v2ray   #解压缩
-#启动qv2ray
 ```
+8. 启动qv2ray,分组，订阅设置，勾选此分组是一个订阅，订阅类型选择 Base64，更新订阅。
+
