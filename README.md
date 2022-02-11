@@ -35,3 +35,7 @@ sudo unzip v2ray-linux-64.zip -d /opt/v2ray   #解压缩
 8. 启动qv2ray,分组，订阅设置，勾选此分组是一个订阅，订阅类型选择 Base64，更新订阅。
 9. 如果打开Chrome提示，需要输入密码解锁密钥环，可以在终端输入seahorse，然后在登录上点击邮件，修改密码，新密码留空即可。
 10. 如果挂载其他的NTFS分区时，只能以只读方式挂载，应该是因为Windows的快速启动没有关闭，进入Windows系统关闭快速启动即可。
+11. 在/etc/fstab中加入开机要挂载的分区，记得要先创建对应的空目录。
+```
+/dev/sdb2 /media/zj/数据 ntfs defaults 0 0
+```
