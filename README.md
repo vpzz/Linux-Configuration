@@ -2,7 +2,12 @@
 
 ## 注意事项
 1. 安装完Ubuntu后，先更新所有软件源,可以用tuna的。修改/etc/apt/sources.list文件。不过有时会因为没有更新ca-certificates这个包，会导致无法使用tuna提供的https链接，可以先将sources.list中的https替换为http。也可以使用阿里云的镜像：https://developer.aliyun.com/mirror/ubuntu
-2. 执行下列命令：
+2. 无法连接ssh可能是因为没有安装，如果以最小化安装，默认是不安装ssh的，可以运行
+``` shell
+systemctl status ssh #观察ssh服务是否启动
+sudo apt-get install ssh #如果没有，安装ssh套件
+```
+3. 执行下列命令：
 ``` shell
 sudo apt-get update      #更新软件源缓存
 sudo apt-get upgrade     #更新所有软件包
