@@ -44,5 +44,3 @@ sudo unzip v2ray-linux-64.zip -d /opt/v2ray   #解压缩
 ```
 /dev/sdb2 /media/zj/数据 ntfs defaults 0 0
 ```
-12. 
-13. 
