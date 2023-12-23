@@ -13,10 +13,10 @@ sudo apt-get update      #更新软件源缓存
 sudo apt-get upgrade     #更新所有软件包
 sudo apt-get install vim build-essential git curl
 ```
-4. 需要时可以设置系统代理，使用宿主机的代理软件。
+4. 需要时可以设置系统代理，使用宿主机的代理软件。10811是局域网 http的端口
 ``` shell
-export http_proxy=192.168.80.1:10809
-export https_proxy=192.168.80.1:10809
+export http_proxy=192.168.80.1:10811
+export https_proxy=192.168.80.1:10811
 ```
 5. 配置Vim
 ``` shell
