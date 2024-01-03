@@ -1,7 +1,7 @@
 #放在/usr/lib/systemd/system目录下
 [Unit]
 Description=Paraview remote server
-After=network.target multi-user.target #这两个target是独立的
+After=network.target multi-user.target
 ConditionPathExists=/usr/bin/pvserver
 ConditionPathExists=/home/zj/OpenFOAM/zj-11/run
 
@@ -10,7 +10,7 @@ ExecStart=/usr/bin/pvserver
 KillMode=process
 Restart=on-failure
 RestartPreventExitStatus=255
-Type=forking
+Type=simple
 RuntimeDirectory=pvserver
 RuntimeDirectoryMode=0755
 
