@@ -4,9 +4,10 @@ Description=Paraview remote server
 After=network.target multi-user.target
 ConditionPathExists=/usr/bin/pvserver
 ConditionPathExists=/home/zj/OpenFOAM/zj-11/run
+ConditionPathExists=/usr/bin/start-pvserver.sh
 
 [Service]
-ExecStart=/usr/bin/pvserver
+ExecStart=/usr/bin/start-pvserver.sh
 KillMode=process
 Restart=on-failure
 RestartPreventExitStatus=255
