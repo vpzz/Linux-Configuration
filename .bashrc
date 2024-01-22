@@ -10,6 +10,7 @@ alias df="df -Th"
 alias du="du -sh"
 alias less="less -i"
 alias type="type -a"
+alias rm="rm -I"
 alias paraFoam="paraFoam -builtin"
 PATH=$PATH:~/.local/bin
 
