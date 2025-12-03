@@ -30,12 +30,8 @@ set cmdheight=1 " 设定命令行的行数为 1
 "setlocal foldlevel=1 " 设置折叠层数为
 " set foldclose=all " 设置为自动关闭折叠
 " nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>     " 用空格键来开关折叠
-
 set clipboard=unnamedplus "和系统共享剪贴板
 "vnoremap Y "+y "复制到系统的剪贴板
-
-
-
 
 "设置空格键为LEADER键
 let mapleader=" "
@@ -45,7 +41,6 @@ noremap i k
 noremap k j
 noremap j h
 noremap l l
-
 
 "插入文字的i键替换为h
 noremap h i
@@ -78,7 +73,6 @@ map sj :set nosplitright<CR>:vsplit<CR>
 map si :set nosplitbelow<CR>:split<CR>
 map sk :set splitbelow<CR>:split<CR>
 
-
 "在分屏之间移动
 map <LEADER>i <C-w>k
 map <LEADER>k <C-w>j
@@ -102,14 +96,10 @@ filetype indent on
 filetype plugin on 
 filetype plugin indent on
 
-
-
 map <LEADER><LEADER> <ESC>/<++><CR>:nohlsearch<CR>c4l
-
 
 "关闭搜索高亮
 noremap <LEADER><CR> :nohlsearch<CR>
-
 
 "VIM插件管理器
 call plug#begin('~/.vim/plugged')
@@ -122,12 +112,7 @@ Plug 'scrooloose/nerdtree',{'on':'NERDTreeToggle'}
 Plug 'junegunn/vim-peekaboo'  "显示双引号功能的选项,管理剪贴板用的
 Plug 'junegunn/goyo.vim'
 
-
-
-
-
 call plug#end()
-
 
 "关于插件的配置，需要写在在这以后
 
@@ -149,14 +134,8 @@ color snazzy
 "set t_Co=256
 ""set fillchars+=stl:\ ,stlnc:\
 
-
 "-----------NERDTree----------
 map tt :NERDTreeToggle<CR>
 
-
 "----------Goyo--------------
 "map <LEADER>gy :Goyo<CR> "专注模式
-
-
-
-
