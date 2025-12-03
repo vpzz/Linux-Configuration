@@ -14,13 +14,9 @@ alias rm="rm -I"
 alias paraFoam="paraFoam -builtin"
 PATH=$PATH:~/.local/bin
 
-
-
 # function Extract for common file formats
-
 SAVEIFS=$IFS
 IFS="$(printf '\n\t')"
-
 function x {
  if [ -z "$1" ]; then
     # display usage if no parameters given
@@ -61,7 +57,6 @@ function x {
     done
 fi
 }
-
 IFS=$SAVEIFS
 
 function ranger { #使用q退出ranger回到之前的目录，使用Q退出ranger时会改变当前目录
