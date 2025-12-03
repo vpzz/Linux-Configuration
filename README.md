@@ -11,7 +11,7 @@ sudo apt-get install openssh-server #如果没有，安装ssh套件
 ``` shell
 sudo apt-get update      #更新软件源缓存
 sudo apt-get upgrade     #更新所有软件包
-sudo apt-get install vim build-essential git curl
+sudo apt-get install vim build-essential git curl net-tools
 ```
 4. 需要时可以设置系统代理，使用宿主机的代理软件。10811是局域网 http的端口
 ``` shell
@@ -42,4 +42,9 @@ sudo unzip v2ray-linux-64.zip -d /opt/v2ray   #解压缩
 11. 在/etc/fstab中加入开机要挂载的分区，记得要先创建对应的空目录。
 ```
 /dev/sdb2 /media/zj/数据 ntfs defaults 0 0
+```
+12. 安装chrome
+```
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
