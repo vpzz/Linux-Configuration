@@ -5,13 +5,13 @@
 2. 无法连接ssh可能是因为没有安装，如果以最小化安装，默认是不安装ssh的，可以运行
 ``` shell
 systemctl status ssh #观察ssh服务是否启动
-sudo apt-get install openssh-server ranger #如果没有，安装ssh套件
+sudo apt-get install openssh-server #如果没有，安装ssh套件
 ```
 3. 执行下列命令：
 ``` shell
 sudo apt-get update      #更新软件源缓存
 sudo apt-get upgrade     #更新所有软件包
-sudo apt-get install vim build-essential git curl net-tools
+sudo apt-get install vim build-essential git curl net-tools ranger
 ```
 4. 需要时可以设置系统代理，使用宿主机的代理软件。10811是局域网 http的端口
 ``` shell
