@@ -48,3 +48,8 @@ sudo unzip v2ray-linux-64.zip -d /opt/v2ray   #解压缩
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
+13. 配置git环境
+```
+git config --global user.name "vpzz"
+git config --global user.email 747056333@qq.com
+```
