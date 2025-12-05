@@ -74,3 +74,6 @@ function ranger { #使用q退出ranger回到之前的目录，使用Q退出range
     fi
     command rm -f -- "$tempfile" 2>/dev/null
 }
+
+export http_proxy=192.168.80.1:7897
+export https_proxy=192.168.80.1:7897
