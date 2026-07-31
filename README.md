@@ -53,3 +53,4 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 git config --global user.name "vpzz"
 git config --global user.email 747056333@qq.com
 ```
+14. 删除用户家目录的所有系统生成的空目录，例如Documents，Download等，打开~/.config/user-dirs.dirs文件，修改第一行为XDG_DESKTOP_DIR="$HOME"，注释掉其余行。
