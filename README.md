@@ -18,7 +18,7 @@ sudo apt-get install vim build-essential git curl net-tools ranger
 export http_proxy=192.168.80.1:7897
 export https_proxy=192.168.80.1:7897
 ```
-5. 配置Vim
+5. 配置Vim，先把.vimrc拷贝到用户目录中，在执行下面的命令
 ``` shell
 cd ~
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
