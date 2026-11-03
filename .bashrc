@@ -74,6 +74,6 @@ function ranger { #使用q退出ranger回到之前的目录，使用Q退出range
     fi
     command rm -f -- "$tempfile" 2>/dev/null
 }
-#如果宿主机的clash使用的是TUN模式，而非系统代理，不用注释掉下面两行
+#如果宿主机的clash使用的是TUN模式，而非系统代理，需要注释掉下面两行，不需要设置
 export http_proxy=http://192.168.80.1:7897
 export https_proxy=http://192.168.80.1:7897
