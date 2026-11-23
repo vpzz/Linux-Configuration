@@ -15,7 +15,7 @@ sudo apt-get install vim build-essential git curl net-tools ranger
 ```
 4. 需要时可以设置系统代理，使用宿主机的代理软件。7897是局域网 http的端口
 ``` shell
-export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897
+export https_proxy=http://192.168.80.1:7897 http_proxy=http://192.168.80.1:7897 all_proxy=socks5://192.168.80.1:7897
 ```
 5. 配置Vim，先把.vimrc拷贝到用户目录中，在执行下面的命令
 ``` shell
